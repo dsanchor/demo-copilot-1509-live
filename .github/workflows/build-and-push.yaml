@@ -69,4 +69,4 @@ jobs:
         run: az aks get-credentials --resource-group ${{ env.AKS_RESOURCE_GROUP }} --name ${{ env.AKS_CLUSTER_NAME }}
 
       - name: Deploy Kubernetes manifests
-        run: sed -i "s/IMAGE_TAG/${{ env.IMAGE_TAG }}/g" k8s/*.yaml && kubectl apply -f k8s/ -n ${{ env.AKS_NAMESPACE }}
+        run: sed -i "s/$IMAGE_TAG/${{ env.IMAGE_TAG }}/g" k8s/*.yaml && kubectl apply -f k8s/ -n ${{ env.AKS_NAMESPACE }}
