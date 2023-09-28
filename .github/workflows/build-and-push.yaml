@@ -14,8 +14,8 @@ env:
   PACKAGE_OWNER: ${{ github.actor }}
   PACKAGE_NAME: demo1509
   AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
-  AKS_CLUSTER_NAME: aks-demo-alb-rg
-  AKS_RESOURCE_GROUP: demo
+  AKS_CLUSTER_NAME: demo
+  AKS_RESOURCE_GROUP: aks-demo-alb-rg
   AKS_NAMESPACE: demo
 
 jobs:
