@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: demo-app
-          image: ghcr.io/dsanchor/demo1509:latest
+          image: ghcr.io/dsanchor/demo1509:${IMAGE_TAG}
           ports:
             - containerPort: 8080
 ---
